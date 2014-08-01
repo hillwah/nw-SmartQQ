@@ -6,9 +6,9 @@
 1. 实现比较简单，就是直接location到http://w.qq.com;
 2. 加入了Tray，单击可显示或隐藏;
 
-**使用**
-    1. 直接下载我打包的64位版本：[64bit](http://pan.baidu.com/s/1c009Mko)
-    2. 自己玩的话就下载node-webkit 0.8.6：Linux [32bit](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-ia32.tar.gz) / [64bit](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-x64.tar.gz)
+**使用**  
+    1. 直接下载我打包的64位版本：[64bit](http://pan.baidu.com/s/1c009Mko)  
+    2. 自己玩的话就下载node-webkit 0.8.6：Linux [32bit](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-ia32.tar.gz) / [64bit](http://dl.node-webkit.org/v0.8.6/node-webkit-v0.8.6-linux-x64.tar.gz)  
 
 ## 0x03 未实现##
 1. 还没有实现桌面提醒的功能，SmartQQ自带有这个功能，不过是要在非当前tab，我不懂怎么去实现（也没能力）;
