@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Smart QQ</title>
+  </head>
+  <body>
+    <script>
+    var isShowWindow = true;
+    var gui = require('nw.gui');
+    var win = gui.Window.get();
+    var tray = new gui.Tray({title:'Smart QQ', icon:'app/img/alloylogo.png'});
+
+    tray.tooltip = 'Smart QQ';
+
+    //Menu
+    var menu = new gui.Menu();
+    menu.append(new gui.MenuItem({
+        type: 'normal',
+        label: 'Show/Hide',
+        click: function() {
+            if(isShowWindow) {
+                win.hide();
+                isShowWindow = false;
+            } else {
+                win.show();
+                isShowWindow = true;
+            }
+        }
+    }));
+    menu.append(new gui.MenuItem({
+        type: 'normal',
+        label: 'Quit',
+        click: function() {
+            gui.App.quit();
+        }
+    }))
+    tray.menu = menu;
+
+    //Click to show/hide;
+    tray.on('click',
+        function() {
+            if(isShowWindow) {
+                win.hide();
+                isShowWindow = false;
+            } else {
+                win.show();
+                isShowWindow = true;
+            }
+        });
+
+    //Load Web QQ;
+    location='http://w.qq.com/';
+    </script>
+    <script src='js/background.js'></script>
+  </body>
+</html>
