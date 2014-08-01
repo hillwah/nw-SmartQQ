@@ -1,0 +1,12 @@
+{
+    "name": "Smart QQ",
+    "main": "app/index.html",
+    "version": "0.1",
+    "window": {
+        "icon": "app/img/alloylogo.png",
+        "toolbar": false,
+        "width": 275,
+        "height": 500,
+        "show_in_taskbar": false
+    }
+}
